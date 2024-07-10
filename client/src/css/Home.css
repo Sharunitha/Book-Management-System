@@ -1,0 +1,80 @@
+/* Hero.css */
+.hero {
+    display: flex;
+    background-color: #6295A2;
+    color: #1c3b4d;
+    height: 95vh;
+    padding-inline: 30px;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-text {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    word-spacing: 1%;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    max-width: 400px;
+    margin-bottom: 20px;
+    color: #e1f1f5;
+    font-weight: bold;
+}
+
+.hero-image {
+    flex: 1;
+    background: url('Images/books.png') center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 799px) {
+    
+    .hero-content {
+        flex: 2;
+    }
+    .hero-text {
+        font-size: 3rem;
+    }
+    .hero-description {
+        font-size: 1.5rem;
+        max-width: 700px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    .hero-image {
+        flex: 2;     
+    }
+}
+@media  screen and (max-width: 477px) {
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero-content {
+        flex: 0;
+       
+    }
+    .hero-text {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+    .hero-description {
+        font-size: 1.5rem;
+        max-width: 700px;
+        font-weight: 200;
+        text-align: justify;
+        margin-bottom: 0px;
+    }
+    .hero-image {
+        flex: 0.5;    
+       
+    }
+}
